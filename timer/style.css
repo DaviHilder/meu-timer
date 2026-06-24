@@ -6,11 +6,8 @@
 body {
     height: 100vh;
     width: 100vw;
-}
-
-.area{
-    border: 2px solid black;
-    border-radius: 15px;
+    background: #f4f4f2;
+    font-family: sans-serif;
 }
 
 .container {
@@ -23,19 +20,70 @@ body {
 
 .area {
     display: flex;
+    flex-direction: column;
     height: 250px;
     width: 500px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 28px 32px;
+    gap: 12px;
 }
 
 p {
-    padding: 50px 25px;
-    font-size: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0;
 }
 
 .timer {
-    padding-top: 110px;
+    font-family: monospace;
+    font-size: 48px;
+    font-weight: 400;
+    color: #1a1a1a;
+    letter-spacing: 0.04em;
+    padding: 0;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons {
-    padding-top: 170px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 0;
 }
+
+button {
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #1a1a1a;
+    transition: background 0.15s, transform 0.1s;
+}
+
+button:hover  { background: #f0f0f0; }
+button:active { transform: scale(0.97); }
+
+button.iniciar {
+    background: #1D9E75;
+    color: #fff;
+    border-color: #1D9E75;
+}
+button.iniciar:hover { background: #0F6E56; }
+
+button.zerar {
+    color: #c0392b;
+    border-color: #e0b3b3;
+}
+button.zerar:hover { background: #fdf0f0; }
